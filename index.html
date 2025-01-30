@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <script type="text/javascript" async
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.2/es5/tex-mml-chtml.js">
+</script>
   <meta charset="utf-8">
   <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
   <!-- Replace the content tag with appropriate information -->
@@ -24,7 +27,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
-  <title>Academic Project Page</title>
+  <title>Efficient Learning with Sine-Activated Low-Rank Matrices</title>
   <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
   rel="stylesheet">
@@ -44,6 +47,9 @@
   <script src="static/js/bulma-slider.min.js"></script>
   <script src="static/js/index.js"></script>
 </head>
+<script type="text/javascript" async
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.2/es5/tex-mml-chtml.js">
+</script>
 <body>
 
 
@@ -52,28 +58,32 @@
       <div class="container is-max-desktop">
         <div class="columns is-centered">
           <div class="column has-text-centered">
-            <h1 class="title is-1 publication-title">Academic Project Page</h1>
+            <h1 class="title is-1 publication-title">Efficient Learning With Sine-Activated Low-rank Matrices</h1>
             <div class="is-size-5 publication-authors">
               <!-- Paper authors -->
               <span class="author-block">
-                <a href="FIRST AUTHOR PERSONAL LINK" target="_blank">First Author</a><sup>*</sup>,</span>
+                <a  target="_blank">Yiping Ji</a><sup>*&dagger;</sup>,</span>
                 <span class="author-block">
-                  <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Second Author</a><sup>*</sup>,</span>
+                  <a  target="_blank">Hemanth Saratchandran</a><sup>*</sup>,</span>
                   <span class="author-block">
-                    <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Third Author</a>
+                    <a target="_blank">Cameron Gordon</a>,</span>
+                    <span class="author-block">
+                      <a target="_blank">Zeyu Zhang</a>,</span>
+                      <span class="author-block">
+                        <a target="_blank">Simon Lucey</a>
                   </span>
                   </div>
 
                   <div class="is-size-5 publication-authors">
-                    <span class="author-block">Institution Name<br>Conferance name and year</span>
-                    <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span>
+                    <span class="author-block">Australian Institute for Machine Learning(AIML), University of Adelaide<br>ICLR 2025</span>
+                    <span class="eql-cntrb"><small><br><sup>*</sup>Equal Contribution, &dagger;Project Lead</small></span>
                   </div>
 
                   <div class="column has-text-centered">
                     <div class="publication-links">
                          <!-- Arxiv PDF link -->
                       <span class="link-block">
-                        <a href="https://arxiv.org/pdf/<ARXIV PAPER ID>.pdf" target="_blank"
+                        <a href="https://arxiv.org/abs/2403.19243" target="_blank"
                         class="external-link button is-normal is-rounded is-dark">
                         <span class="icon">
                           <i class="fas fa-file-pdf"></i>
@@ -81,17 +91,6 @@
                         <span>Paper</span>
                       </a>
                     </span>
-
-                    <!-- Supplementary PDF link -->
-                    <span class="link-block">
-                      <a href="static/pdfs/supplementary_material.pdf" target="_blank"
-                      class="external-link button is-normal is-rounded is-dark">
-                      <span class="icon">
-                        <i class="fas fa-file-pdf"></i>
-                      </span>
-                      <span>Supplementary</span>
-                    </a>
-                  </span>
 
                   <!-- Github link -->
                   <span class="link-block">
@@ -106,7 +105,7 @@
 
                 <!-- ArXiv abstract Link -->
                 <span class="link-block">
-                  <a href="https://arxiv.org/abs/<ARXIV PAPER ID>" target="_blank"
+                  <a href="https://arxiv.org/abs/2403.19243" target="_blank"
                   class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                     <i class="ai ai-arxiv"></i>
@@ -123,22 +122,17 @@
 </section>
 
 
-<!-- Teaser video-->
+<!-- Image Grid Section -->
 <section class="hero teaser">
   <div class="container is-max-desktop">
     <div class="hero-body">
-      <video poster="" id="tree" autoplay controls muted loop height="100%">
-        <!-- Your video here -->
-        <source src="static/videos/banner_video.mp4"
-        type="video/mp4">
-      </video>
-      <h2 class="subtitle has-text-centered">
-        Aliquam vitae elit ullamcorper tellus egestas pellentesque. Ut lacus tellus, maximus vel lectus at, placerat pretium mi. Maecenas dignissim tincidunt vestibulum. Sed consequat hendrerit nisl ut maximus. 
-      </h2>
+      <div class="image-grid">
+        <img src="static/images/teaser.png" alt="Image 1">
+
+      </div>
     </div>
   </div>
 </section>
-<!-- End teaser video -->
 
 <!-- Paper abstract -->
 <section class="section hero is-light">
@@ -148,8 +142,7 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ullamcorper tellus sed ante aliquam tempus. Etiam porttitor urna feugiat nibh elementum, et tempor dolor mattis. Donec accumsan enim augue, a vulputate nisi sodales sit amet. Proin bibendum ex eget mauris cursus euismod nec et nibh. Maecenas ac gravida ante, nec cursus dui. Vivamus purus nibh, placerat ac purus eget, sagittis vestibulum metus. Sed vestibulum bibendum lectus gravida commodo. Pellentesque auctor leo vitae sagittis suscipit.
-          </p>
+            Low-rank decomposition has emerged as a vital tool for enhancing parameter efficiency in neural network architectures, gaining traction across diverse applications in machine learning. These techniques significantly lower the number of parameters, striking a balance between compactness and performance. However, a common challenge has been the compromise between parameter efficiency and the accuracy of the model, where reduced parameters often lead to diminished accuracy compared to their full-rank counterparts. In this work, we propose a novel theoretical framework that integrates a sinusoidal function within the low-rank decomposition process. This approach not only preserves the benefits of the parameter efficiency characteristic of low-rank methods but also increases the decomposition's rank, thereby enhancing model performance. Our method proves to be a plug in enhancement for existing low-rank models, as evidenced by its successful application in Vision Transformers (ViT), Large Language Models (LLMs), Neural Radiance Fields (NeRF) and 3D shape modelling.          </p>
         </div>
       </div>
     </div>
@@ -157,110 +150,191 @@
 </section>
 <!-- End paper abstract -->
 
-
-<!-- Image carousel -->
-<section class="hero is-small">
-  <div class="hero-body">
-    <div class="container">
-      <div id="results-carousel" class="carousel results-carousel">
-       <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel1.jpg" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-          First image description.
-        </h2>
+<!-- <section class="image-container">
+  <img src="static/images/framework.png" alt="Teaset Image">
+  <p class="description">
+    这是一张示例图片的描述，你可以在这里写文字说明。
+  </p>
+</section> -->
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Methodology</h2>
+        <div class="figure-images">
+          <img src="static/images/framework.png" alt="Figure 2">
+        </div>
+        <p class="figure-caption">
+          These figures display weight magnitudes for matrices with dimension \( 128 \times 128 \). 
+          The first figure showcases a heatmap of a full-rank matrix initialized by Kaiming uniform, highlighting linear independence among rows. 
+          The second shows a low-rank matrix \( \mathbf{W}_{\text{lr}} = \mathbf{U} \mathbf{V}^T \in \mathbb{R}^{128 \times 128} \), 
+          with \( \mathbf{U}, \mathbf{V} \in \mathbb{R}^{128 \times 1} \) initialized by Kaiming uniform, illustrating minimal linear independence. 
+          The final pair of figures reveal how applying a sine function element-wise, 
+          \( \sin(\omega \cdot \mathbf{U} \mathbf{V}^T) \), with varying \( \omega \), affects linear independence in low-rank matrices;
+          specifically, \( \omega = 100 \) and \( \omega = 2000 \) progressively increase linear independence.
+        </p>
       </div>
-      <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel2.jpg" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-          Second image description.
-        </h2>
-      </div>
-      <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel3.jpg" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-         Third image description.
-       </h2>
-     </div>
-     <div class="item">
-      <!-- Your image here -->
-      <img src="static/images/carousel4.jpg" alt="MY ALT TEXT"/>
-      <h2 class="subtitle has-text-centered">
-        Fourth image description.
-      </h2>
     </div>
   </div>
+</section>
+
+<!-- CSS -->
+<style>
+.figure-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* 确保整个部分水平居中 */
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    padding: 20px 0;
+}
+
+.container {
+    max-width: 900px; /* 限制最大宽度 */
+    width: 100%;
+    margin: 0 auto; /* 确保容器本身居中 */
+}
+
+.figure-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* 确保内容居中 */
+    justify-content: center;
+    text-align: center;
+}
+
+.figure-images {
+    display: flex;
+    justify-content: center; /* 让所有图片水平居中 */
+    flex-wrap: wrap; /* 确保多张图片不会溢出 */
+    gap: 15px; /* 图片之间的间距 */
+}
+
+.figure-images img {
+    max-width: 800px; /* 限制最大宽度 */
+    width: auto;
+    height: auto;
+    display: block; /* 让图片作为块级元素 */
+    margin: 0 auto; /* 确保居中 */
+}
+
+.figure-caption {
+    margin-top: 15px;
+    font-size: 16px;
+    color: #333;
+    text-align: center; /* 确保文字居中 */
+    max-width: 800px; /* 限制文字宽度 */
+}
+pre code.language-python {
+    background-color: #eaeaea; /* Dark mode */
+    color: #333;
+    border-radius: 5px;
+    padding: 15px;
+}
+
+/* Ensure BibTeX Code Stays Light */
+.bibtex-code {
+    background-color: #f8f9fa !important; /* Light background */
+    color: #333 !important; /* Dark text */
+    border-radius: 5px;
+    padding: 15px;
+    font-family: monospace;
+}
+code span.red {
+    color: red !important;
+}
+</style>
+
+
+<div class="code-container">
+  <h2 class="code-title">Implementation of Sine LoRA compared to LoRA and Sine DoRA compared to DoRA in PyTorch-like code</h2>
+  <pre><code class="language-python">
+## LoRA forward pass
+def forward(self, x: torch.Tensor):
+    base_result = F.linear(x, transpose(self.weight, self.fan_in_fan_out), bias=self.bias)
+
+    result += ((self.lora_dropout(x.to(self.lora_A.weight.dtype)) @ self.lora_A.weight.T) @ self.lora_B.weight.T) * self.scaling
+    return result
+
+## Sine LoRA forward pass
+def forward(self, x: torch.Tensor):
+    base_result = F.linear(x, transpose(self.weight, self.fan_in_fan_out), bias=self.bias)
+    dropout_x = self.lora_dropout(x)
+
+    result += ((self.lora_dropout(x.to(self.lora_A.weight.dtype))) @ <span style="color: red;">torch.sin</span>(self.freq * self.lora_A.weight.T @ self.lora_B.weight.T))/self.s * self.scaling
+    return result
+
+## DoRA forward pass
+def forward(self, x: torch.Tensor):
+    base_result = F.linear(x, transpose(self.weight, self.fan_in_fan_out))
+    dropout_x = self.lora_dropout(x)
+
+    new_weight_v = self.weight + (self.lora_B.weight @ self.lora_A.weight) * self.scaling
+    norm_scale = self.weight_m_wdecomp.weight.view(-1) / (torch.linalg.norm(new_weight_v,dim=1)).detach()
+    result = base_result + (norm_scale-1) * (F.linear(dropout_x, transpose(self.weight, self.fan_in_fan_out)))
+    result += ( norm_scale * (self.lora_B(self.lora_A(dropout_x.to(self.lora_A.weight.dtype))))) * self.scaling
+    if not self.bias is None:
+        result += self.bias.view(1, -1).expand_as(result)
+    return result
+
+## Sine DoRA forward pass
+def forward(self, x: torch.Tensor):
+    base_result = F.linear(x, transpose(self.weight, self.fan_in_fan_out))
+    dropout_x = self.lora_dropout(x)
+
+    new_weight_v = self.weight + (self.lora_B.weight @ self.lora_A.weight) * self.scaling
+    norm_scale = self.weight_m_wdecomp.weight.view(-1) / (torch.linalg.norm(new_weight_v,dim=1)).detach()
+    result = base_result + (norm_scale-1) * (F.linear(dropout_x, transpose(self.weight, self.fan_in_fan_out)))
+    result += (norm_scale * torch.sin(self.freq*(self.lora_B(self.lora_A(dropout_x.to(self.lora_A.weight.dtype))))/self.s)) * self.scaling
+    if not self.bias is None:
+        result += self.bias.view(1, -1).expand_as(result)
+    return result
+  </code></pre>
 </div>
-</div>
-</section>
-<!-- End image carousel -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/github-dark.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+      document.querySelectorAll("pre code.language-python").forEach((block) => {
+          hljs.highlightElement(block);
+      });
+  });
+  </script>
+
+<style>
+
+.code-container {
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: left;
+    max-width: 800px;
+    margin: 0 auto;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.code-title {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+pre {
+    padding: 15px;
+    border-radius: 5px;
+    overflow-x: auto;
+}
 
 
-
-
-<!-- Youtube video -->
-<section class="hero is-small is-light">
-  <div class="hero-body">
-    <div class="container">
-      <!-- Paper video. -->
-      <h2 class="title is-3">Video Presentation</h2>
-      <div class="columns is-centered has-text-centered">
-        <div class="column is-four-fifths">
-          
-          <div class="publication-video">
-            <!-- Youtube embed code here -->
-            <iframe src="https://www.youtube.com/embed/JkaxUblCGz0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- End youtube video -->
-
-
-<!-- Video carousel -->
-<section class="hero is-small">
-  <div class="hero-body">
-    <div class="container">
-      <h2 class="title is-3">Another Carousel</h2>
-      <div id="results-carousel" class="carousel results-carousel">
-        <div class="item item-video1">
-          <video poster="" id="video1" autoplay controls muted loop height="100%">
-            <!-- Your video file here -->
-            <source src="static/videos/carousel1.mp4"
-            type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-video2">
-          <video poster="" id="video2" autoplay controls muted loop height="100%">
-            <!-- Your video file here -->
-            <source src="static/videos/carousel2.mp4"
-            type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-video3">
-          <video poster="" id="video3" autoplay controls muted loop height="100%">\
-            <!-- Your video file here -->
-            <source src="static/videos/carousel3.mp4"
-            type="video/mp4">
-          </video>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- End video carousel -->
-
-
+</style>
 
 
 
 
 <!-- Paper poster -->
-<section class="hero is-small is-light">
+<!-- <section class="hero is-small is-light">
   <div class="hero-body">
     <div class="container">
       <h2 class="title">Poster</h2>
@@ -275,11 +349,21 @@
 
 
 <!--BibTex citation -->
-  <section class="section" id="BibTeX">
-    <div class="container is-max-desktop content">
-      <h2 class="title">BibTeX</h2>
-      <pre><code>BibTex Code Here</code></pre>
-    </div>
+<section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title">BibTeX</h2>
+    <pre class="bibtex-code"><code>
+@misc{ji2024sineactivatedlowrankmatrices,
+    title={Sine Activated Low-Rank Matrices for Parameter Efficient Learning}, 
+    author={Yiping Ji and Hemanth Saratchandran and Cameron Gordon and Zeyu Zhang and Simon Lucey},
+    year={2024},
+    eprint={2403.19243},
+    archivePrefix={arXiv},
+    primaryClass={cs.LG},
+    url={https://arxiv.org/abs/2403.19243}, 
+}
+    </code></pre>
+  </div>
 </section>
 <!--End BibTex citation -->
 
