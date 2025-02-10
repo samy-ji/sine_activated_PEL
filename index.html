@@ -28,7 +28,6 @@
 
 
   <title>Efficient Learning with Sine-Activated Low-Rank Matrices</title>
-  <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
   rel="stylesheet">
 
@@ -76,7 +75,7 @@
 
                   <div class="is-size-5 publication-authors">
                     <span class="author-block">Australian Institute for Machine Learning(AIML), University of Adelaide<br>ICLR 2025</span>
-                    <span class="eql-cntrb"><small><br><sup>*</sup>Equal Contribution, &dagger;Project Lead</small></span>
+                    <span class="eql-cntrb"><small><br><sup>*</sup>Equal Contribution, &dagger;Corresponding Author</small></span>
                   </div>
 
                   <div class="column has-text-centered">
@@ -244,9 +243,16 @@ pre code.language-python {
 code span.red {
     color: red !important;
 }
+
 </style>
 
-
+<style>
+  /* 让某一行代码变红 */
+  .highlight-line {
+      color: red;
+      font-weight: bold;
+  }
+  </style>
 <div class="code-container">
   <h2 class="code-title">Implementation of Sine LoRA compared to LoRA and Sine DoRA compared to DoRA in PyTorch-like code</h2>
   <pre><code class="language-python">
@@ -261,8 +267,8 @@ def forward(self, x: torch.Tensor):
 def forward(self, x: torch.Tensor):
     base_result = F.linear(x, transpose(self.weight, self.fan_in_fan_out), bias=self.bias)
     dropout_x = self.lora_dropout(x)
-
-    result += ((self.lora_dropout(x.to(self.lora_A.weight.dtype))) @ <span style="color: red;">torch.sin</span>(self.freq * self.lora_A.weight.T @ self.lora_B.weight.T))/self.s * self.scaling
+    
+    result += ((self.lora_dropout(x.to(self.lora_A.weight.dtype))) @ torch.sin(self.freq * self.lora_A.weight.T @ self.lora_B.weight.T))/self.s * self.scaling
     return result
 
 ## DoRA forward pass
@@ -298,6 +304,17 @@ def forward(self, x: torch.Tensor):
   document.addEventListener("DOMContentLoaded", function() {
       document.querySelectorAll("pre code.language-python").forEach((block) => {
           hljs.highlightElement(block);
+          let codeHTML = block.innerHTML;
+
+          codeHTML = codeHTML.replace(/\btorch.sin\b/g, '<span style="color: red; font-weight: bold;">torch.sin</span>');
+// 替换 "return" 让它变红
+codeHTML = codeHTML.replace(/\breturn\b/g, '<span class="highlight-word">return</span>');
+
+// 替换 "def" 让它变蓝
+codeHTML = codeHTML.replace(/\bdef\b/g, '<span style="color: dark gray; font-weight: bold;">def</span>');
+
+// 重新写入 HTML
+block.innerHTML = codeHTML;
       });
   });
   </script>
@@ -309,7 +326,7 @@ def forward(self, x: torch.Tensor):
     border-radius: 8px;
     padding: 20px;
     text-align: left;
-    max-width: 800px;
+    max-width: 1200px;
     margin: 0 auto;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
 }
