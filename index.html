@@ -211,7 +211,7 @@
 }
 
 .figure-images img {
-    max-width: 800px; /* 限制最大宽度 */
+    max-width: 1000px; /* 限制最大宽度 */
     width: auto;
     height: auto;
     display: block; /* 让图片作为块级元素 */
@@ -223,7 +223,7 @@
     font-size: 16px;
     color: #333;
     text-align: center; /* 确保文字居中 */
-    max-width: 800px; /* 限制文字宽度 */
+    max-width: 1200px; /* 限制文字宽度 */
 }
 pre code.language-python {
     background-color: #eaeaea; /* Dark mode */
@@ -253,6 +253,47 @@ code span.red {
       font-weight: bold;
   }
   </style>
+
+
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Results</h2>
+        <div class="figure-images">
+          <figcaption style="
+          font-size: 20px;
+          font-weight: bold;
+          text-align: center;
+          white-space: nowrap; /* 让文字不换行 */
+          display: inline-block; /* 让 figcaption 变成内联块级元素 */
+          max-width: 2000px;
+        ">
+          Finetune the LLaMA 3-8B model using the LoRA and sine-LoRA methods on commonsense benchmark.
+        </figcaption>
+
+          <img src="static/images/sinlora.png" alt="Figure 3">
+          <figcaption style="
+          font-size: 20px;
+          font-weight: bold;
+          text-align: center;
+          white-space: nowrap; /* 让文字不换行 */
+          display: inline-block; /* 让 figcaption 变成内联块级元素 */
+          max-width: 2000px;
+        ">
+          Finetune the LLaMA 3-8B model using the DoRA and sine-DoRA methods on commonsense benchmark.
+        </figcaption>
+          <img src="static/images/sindora.png" alt="Figure 3">
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+
 <div class="code-container">
   <h2 class="code-title">Implementation of Sine LoRA compared to LoRA and Sine DoRA compared to DoRA in PyTorch-like code</h2>
   <pre><code class="language-python">
